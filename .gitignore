@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.log
+# Environment files
+.env
+*.env
+venv/
+*.pdf
+*.docx
+*.pptx
+.DS_Store
+*.egg-info/
+dist/
+build/

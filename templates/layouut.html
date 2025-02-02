@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}OCR Application{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>OCR Application</h1>
+        <nav>
+            <a href="/">Home</a> |
+            {% if session.get('user') %}
+            <a href="/dashboard">Dashboard</a> |
+            <a href="/logout">Log Out</a>
+            {% else %}
+            <a href="/register">Register</a> |
+            <a href="/login">Login</a>
+            {% endif %}
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
